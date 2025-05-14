@@ -1,6 +1,8 @@
 # LightPickers Backend - Tau's Part
 
-你好，我是徐韜。本專案為六角學院專題《拾光堂》的後端開發部分，由我負責主要功能開發與架構設計。專案為二手攝影器材電商平台，提供完整購物流程與金流整合功能。
+你好，我是徐韜。本專案為六角學院專題《拾光堂》的後端開發部分，由我負責主要功能開發與架構設計。
+專案為二手攝影器材電商平台，提供完整購物流程與金流整合功能。
+[🔗 拾光堂 Node.js Tau's Part](https://github.com/TauHsu/LightPeakers-Backend-Nodejs-TauPart/tree/main)
 
 ---
 
