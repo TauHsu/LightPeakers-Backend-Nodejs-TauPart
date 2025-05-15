@@ -77,3 +77,5 @@ LightPeakers-Backend-Nodejs-TauPart/
 [🔗 資料表設計圖（dbdiagram.io）](https://dbdiagram.io/d/Light-Peakers-67ea32794f7afba184c42005)
 
 如果您有任何問題或建議，歡迎與我聯繫。感謝閱讀！
+聯絡電話: 0953131750
+email: jason850629@gmail.com
