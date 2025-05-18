@@ -6,6 +6,7 @@ const pinoHttp = require("pino-http");
 const logger = require("./utils/logger")("App");
 const cartRouter = require("./routes/cart.js");
 const ordersRouter = require("./routes/orders.js");
+const neWebPayRouter = require("./routes/neWebPay.js");
 
 const app = express();
 app.use(cors());
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/v1/cart", cartRouter);
 app.use("/api/v1/orders", ordersRouter);
+app.use("/neWebPay", neWebPayRouter);
 
 //404
 app.use((req, res, next) => {
