@@ -21,7 +21,7 @@
 
 - **後端框架**：Node.js + Express
 - **資料庫**：PostgreSQL（使用 TypeORM 管理）
-- **部署平台**：Render（API）+ Neon（PostgreSQL）+ Redis Cloud
+- **部署平台**：Render（Web）+ Neon（PostgreSQL）+ Redis Cloud
 - **身分驗證**：JWT、Bcrypt
 - **金流整合**：藍新金流 NewebPay（含 AES 加密 / SHA256）
 - **快取**：Redis
@@ -65,6 +65,8 @@ LightPeakers-Backend-Nodejs-TauPart/
 │   ├── neWebPayCrypto.js
 │   ├── redis.js
 │   ├── validUtils.js
+│   ├── validateFields.js
+│   ├── validateRules.js
 │   ├── validatePatterns.js
 │   ├── validateSignup.js
 ├── app.js               # Express 應用程式主檔
