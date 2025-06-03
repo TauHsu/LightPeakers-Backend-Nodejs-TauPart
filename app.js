@@ -4,6 +4,8 @@ const cors = require("cors");
 const pinoHttp = require("pino-http");
 
 const logger = require("./utils/logger")("App");
+const emailRouter = require("./routes/email");
+const authRouter = require("./routes/auth");
 const cartRouter = require("./routes/cart.js");
 const ordersRouter = require("./routes/orders.js");
 const neWebPayRouter = require("./routes/neWebPay.js");
@@ -25,6 +27,8 @@ app.use(
 );
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/api/v1/email", emailRouter);
+app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/cart", cartRouter);
 app.use("/api/v1/orders", ordersRouter);
 app.use("/neWebPay", neWebPayRouter);

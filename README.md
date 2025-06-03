@@ -6,10 +6,11 @@
 
 ---
 
-## 我的負責項目
+## 個人負責項目
 
 - 系統資料表設計與規劃（TypeORM）
-- 建立會員 / 商品 / 購物車 / 訂單 / 金流 / 優惠券 模組 API（共 17 支）
+- 建立會員 / 商品 / 購物車 / 訂單 / 金流 / 優惠券 模組 API（共 24 支）
+- 串接第三方登入(Google)
 - 串接藍新金流（建立訂單加密請求、接收回傳結果）
 - JWT 登入驗證系統實作
 - 使用 Redis 快取購物車資料
@@ -30,7 +31,7 @@
 
 ---
 
-## 專案結構（我負責的後端模組，部分展示）
+## 專案結構（個人負責的後端模組，部分展示）
 
 ```bash
 LightPeakers-Backend-Nodejs-TauPart/
@@ -38,14 +39,19 @@ LightPeakers-Backend-Nodejs-TauPart/
 │   ├── www.js
 ├── config/              # 環境與密鑰設定
 │   ├── db.js
+│   ├── google.js
 │   ├── index.js
 │   ├── neWebPay.js
 │   ├── redisSecret.js
 │   ├── web.js
 ├── controllers/         # API 控制器
+│   ├── auth.js
+│   ├── email.js
 │   ├── cart.js
 │   ├── orders.js
 ├── routes/              # 路由定義
+│   ├── auth.js
+│   ├── email.js
 │   ├── cart.js
 │   ├── orders.js
 │   ├── neWebPay.js
@@ -64,6 +70,7 @@ LightPeakers-Backend-Nodejs-TauPart/
 │   ├── logger.js
 │   ├── neWebPayCrypto.js
 │   ├── redis.js
+│   ├── sendEmail.js
 │   ├── validUtils.js
 │   ├── validateFields.js
 │   ├── validateRules.js
